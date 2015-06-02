@@ -25,5 +25,12 @@ public class PrimeNumberTest {
 		assertNotEquals(0, PrimeNumber.addValueToListAndReturnSize(1L, new ArrayList<Long>()));
 	}
 	
+	@Test
+	public void calculateNextPrimeNumberOfThisTest(){
+		long prime = 7;
+		assertTrue(prime < PrimeNumber.calculateNextPrimeNumberOfThis(prime));
+		assertEquals(PrimeNumber.calculateNextPrimeNumberOfThis(prime),11L);
+	}
+	
 
 }

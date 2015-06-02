@@ -9,4 +9,8 @@ public class PrimeNumber {
 		return list.size();
 	}
 	
+	public static long calculateNextPrimeNumberOfThis(long prime){
+		return 0;
+	}
+	
 }
