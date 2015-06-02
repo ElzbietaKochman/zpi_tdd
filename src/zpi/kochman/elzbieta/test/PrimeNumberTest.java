@@ -2,9 +2,13 @@ package zpi.kochman.elzbieta.test;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import zpi.kochman.elzbieta.imp.PrimeNumber;
 
 public class PrimeNumberTest {
 
@@ -17,8 +21,9 @@ public class PrimeNumberTest {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void addValueToListAndReturnSizeTest() {
+		assertNotEquals(0, PrimeNumber.addValueToListAndReturnSize(1L, new ArrayList<Long>()));
 	}
+	
 
 }

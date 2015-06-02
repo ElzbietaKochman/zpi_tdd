@@ -1,5 +1,11 @@
 package zpi.kochman.elzbieta.imp;
 
-public class PrimeNumber {
+import java.util.List;
 
+public class PrimeNumber {
+	
+	public static int addValueToListAndReturnSize(long value, List<Long> list){
+		return 0;
+	}
+	
 }
