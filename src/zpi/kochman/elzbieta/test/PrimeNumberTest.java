@@ -32,5 +32,12 @@ public class PrimeNumberTest {
 		assertEquals(PrimeNumber.calculateNextPrimeNumberOfThis(prime),11);
 	}
 	
+	@Test
+	public void calculateNPrimeNumbersTest(){
+		int numberOfPrimesToCalculate = 100;
+		assertNotNull(PrimeNumber.getNPrimeNumbers(numberOfPrimesToCalculate));
+		assertEquals(numberOfPrimesToCalculate, PrimeNumber.getNPrimeNumbers(numberOfPrimesToCalculate).size());
+	}
+	
 
 }
