@@ -28,7 +28,13 @@ public class PrimeNumber {
 	}
 	
 	public static List<Long> getNPrimeNumbers(int numbersToGet){
-		return null;
+		List<Long> primeNumbers = new ArrayList<Long>();
+		primeNumbers.add(2L);
+		while(primeNumbers.size() != numbersToGet){
+			long next_prime = calculateNextPrimeNumberOfThis(primeNumbers.get(primeNumbers.size()-1));
+			addValueToListAndReturnSize(next_prime, primeNumbers);
+		}
+		return primeNumbers;
 	}
 	
 }
