@@ -5,15 +5,26 @@ import java.util.List;
 
 public class PrimeNumber {
 	
-	public static int primesToGet = 10001;
-	
 	public static int addValueToListAndReturnSize(long value, List<Long> list){
 		list.add(value);
 		return list.size();
 	}
 	
-	public static long calculateNextPrimeNumberOfThis(long prime){
-		long new_prime = prime+1;
+	/**
+	 * Calculate next prime number of given number
+	 * <p>Examples: 
+	 * <ul>
+	 * <li>nextPrime(10)<br />
+	 * 	# => 11</li>
+	 * <li>nextPrime(11)<br />
+	 * 	# => 13</li>
+	 * </ul>
+	 * </p>
+	 * @param number - The number of which next prime number is calculated
+	 * @return Next prime number
+	 */
+	public static long calculateNextPrimeNumberOfThis(long number){
+		long new_prime = number+1;
 		while(true){
 			for(int i = 2; i < new_prime/2; i++){
 				if(new_prime % i == 0){
