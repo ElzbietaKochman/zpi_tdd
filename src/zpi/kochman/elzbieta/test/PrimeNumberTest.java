@@ -29,7 +29,7 @@ public class PrimeNumberTest {
 	public void calculateNextPrimeNumberOfThisTest(){
 		long prime = 7;
 		assertTrue(prime < PrimeNumber.calculateNextPrimeNumberOfThis(prime));
-		assertEquals(PrimeNumber.calculateNextPrimeNumberOfThis(prime),11L);
+		assertEquals(PrimeNumber.calculateNextPrimeNumberOfThis(prime),11);
 	}
 	
 
