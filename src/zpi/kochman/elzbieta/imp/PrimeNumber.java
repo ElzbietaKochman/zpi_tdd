@@ -37,4 +37,10 @@ public class PrimeNumber {
 		return primeNumbers;
 	}
 	
+	public static long getAnswerToExcercise(){
+		int nthPrime = 10001;
+		List<Long> listOfPrimes = getNPrimeNumbers(nthPrime);
+		return listOfPrimes.get(listOfPrimes.size()-1);
+	}
+	
 }
